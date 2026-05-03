@@ -1,5 +1,5 @@
 const express = require("express");
-const { v4: uuidv4 } = require("uuid");
+const { randomUUID } = require("crypto");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -17,7 +17,7 @@ app.post("/tasks", (req, res) => {
   }
 
   const task = {
-    id: uuidv4(),
+    id: randomUUID(),
     title,
     completed: false
   };

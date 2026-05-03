@@ -4,3 +4,5 @@ node_modules/
 npm-debug.log*
 server.*.log
 .DS_Store
+Dockerfile.old
+*.log
