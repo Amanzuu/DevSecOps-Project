@@ -2,12 +2,21 @@
 
 ## 📌 Features
 - REST API (CRUD operations)
-- Built with Node.js & Express
-- Tested using Postman
+- Dockerized application
+- Ready for CI/CD & Kubernetes deployment
 
 ## 🛠️ Tech Stack
 - Node.js
 - Express.js
+- Docker
+
+## 🐳 Docker Usage
+
+### Build Image
+docker build -t devsecops-app .
+
+### Run Container
+docker run -p 3000:3000 devsecops-app
 
 ## 🔗 API Endpoints
 - GET /tasks
@@ -16,6 +25,5 @@
 - DELETE /tasks/:id
 
 ## ▶️ Run Locally
-```bash
 npm install
 node index.js
