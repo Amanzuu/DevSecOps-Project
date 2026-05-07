@@ -27,3 +27,6 @@ docker run -p 3000:3000 devsecops-app
 ## ▶️ Run Locally
 npm install
 node index.js
+
+## ☁️ AWS ECR
+Image pushed to Amazon ECR for deployment with EKS.
